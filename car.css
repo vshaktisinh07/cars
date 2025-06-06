@@ -1,0 +1,492 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 80px;
+  padding-block: 20px;
+  padding-bottom: 30px;
+}
+
+nav h1 {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 20px;
+  padding-inline: 10px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.meiber-text {
+  justify-items: center;
+  align-content: center;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.meiber-text h1 {
+  font-size: 100px;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 400;
+}
+
+.meiber-text span {
+  font-size: 100px;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 400;
+  letter-spacing: -3px;
+}
+
+.meiber-text h3 {
+  margin-top: 30px;
+
+  font-size: 20px;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 400;
+}
+
+.meiber-text button {
+  width: 10%;
+  padding: 10px;
+  margin-top: 30px;
+  padding: 7px;
+  margin-left: 45%;
+
+  border: none;
+  border-radius: 30px;
+  font-size: 15px;
+  font-family: sans-serif;
+  transition: 0.3s ease-in-out;
+}
+
+.meiber-text button:hover {
+  border: 1px solid whitesmoke;
+  background-color: #745757f9;
+  cursor: pointer;
+  color: white;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  border: 1px solid #ffffff;
+  margin-top: 30px;
+}
+
+.zoom {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.zoom img {
+  width: 100%;
+  height: 100%;
+  animation: car ease-in-out 1s forwards;
+  animation-timeline: scroll();
+}
+
+@keyframes car {
+  to {
+    transform: scale(1);
+  }
+  from {
+    transform: scale(1.1);
+  }
+}
+
+.vehicles {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.vehicles-text h1 {
+  padding-block: 30px;
+  font-size: 60px;
+  padding-inline: 70px;
+  font-weight: 100;
+}
+
+.vehicles-1,
+.vehicles-2,
+.vehicles-3 {
+  padding-top: 20px;
+  width: 70%;
+  display: flex;
+  padding-left: 50px;
+}
+
+.vehicles-1-img,
+.vehicles-2-img,
+.vehicles-3-img {
+  width: 50%;
+}
+.vehicles-1-text,
+.vehicles-2-text,
+.vehicles-3-text {
+  width: 40%;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.vehicles-1-text span,
+.vehicles-2-text span,
+.vehicles-3-text span {
+  width: 100%;
+  margin-top: 1px;
+}
+
+.vehicles-1-text p1,
+.vehicles-2-text p1,
+.vehicles-3-text p1 {
+  font-size: 26px;
+}
+
+.vehicles-1-text p2,
+.vehicles-2-text p2,
+.vehicles-3-text p2 {
+  font-size: 14px;
+}
+
+.vehicles-1-text p3,
+.vehicles-2-text p3,
+.vehicles-3-text p3 {
+  font-size: 16px;
+  letter-spacing: -0.01em;
+}
+
+.About-Meiber {
+  width: 100%;
+  display: flex;
+}
+
+.About-Meiber-text {
+  width: 50%;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  padding: 100px;
+  padding-left: 50px;
+  margin-right: 50px;
+  justify-content: center;
+}
+.About-Meiber-text h1 {
+  font-size: 64px;
+  font-weight: 100;
+}
+
+.About-Meiber-text p {
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+
+.About-Meiber-img {
+  width: 50%;
+}
+
+.About-Meiber-img img {
+  width: 100%;
+}
+
+.Updates {
+  justify-content: center;
+  align-items: center;
+}
+
+.Updates h1 {
+  font-size: 68px;
+  text-align: center;
+  font-weight: 200;
+  padding: 30px;
+}
+
+.updates-car {
+  width: 100%;
+  height: 800px;
+  display: flex;
+}
+
+.New-Model-img,
+.Events-img,
+.Achievements-img {
+  padding-inline-start: 70px;
+  padding-top: 50px;
+}
+
+.New-Model-img img,
+.Events-img img,
+.Achievements-img img {
+  border: 1px solid #ffffff;
+}
+
+.New-Model-text,
+.Events-text,
+.achievements-text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 20px;
+  justify-items: center;
+  padding-inline: 70px;
+  padding-top: 60px;
+  font-weight: 100;
+}
+
+.New-Model-text,
+.Events-text,
+p1 {
+  font-size: 26px;
+}
+
+.New-Model-text,
+.Events-text,
+p2 {
+  font-size: 16px;
+}
+.New-Model,
+.Events,
+.Achievements {
+  width: 33.33%;
+  height: 100%;
+  border: 0.5px solid white;
+}
+
+.achievement-text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 20px;
+  justify-items: center;
+  align-items: left;
+  padding-inline: 70px;
+  padding-top: 60px;
+  font-weight: 100;
+}
+
+.Get-in {
+  padding: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.Get-in h1 {
+  font-size: 68px;
+  font-weight: 100;
+}
+
+.Get-in p {
+  font-size: 20px;
+  padding-inline-start: 5px;
+  font-weight: 100;
+}
+
+.contact-form {
+  padding-inline-start: 300px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  gap: 25px;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 25px;
+}
+
+.name input {
+  width: 500px;
+}
+
+.fname {
+  display: flex;
+  gap: 40%;
+}
+
+.lname {
+  display: flex;
+  gap: 5%;
+}
+
+input {
+  height: 40px;
+  background-color: black;
+  border-top: black;
+  border-left: black;
+  border-right: black;
+  border-bottom: 1px solid white;
+}
+
+textarea {
+  height: 40px;
+  background-color: black;
+  border-top: black;
+  border-left: black;
+  border-right: black;
+  border-bottom: 1px solid white;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 40px;
+  border: 1 px solid transparent;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.contact-form button:hover {
+  border: 1px solid white;
+  background-color: sandybrown;
+}
+
+.subscribe-text h1 {
+  font-size: 30px;
+  padding: 40px;
+  font-weight: 100;
+}
+
+.subscribe-info {
+  width: 100%;
+  height: 200px;
+  display: flex;
+}
+
+.subscribe-info-mail,
+.subscribe-info-add {
+  width: 25%;
+  height: 200px;
+  border: 1px solid #ffffff;
+}
+
+.subscribe-info-mail h3,
+.subscribe-info-add h3 {
+  padding-inline-start: 50px;
+  padding-top: 70px;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.subscribe-info-mail h4,
+.subscribe-info-add h4 {
+  padding-inline-start: 50px;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.subscribe-info-add {
+  width: 25%;
+  height: 200px;
+  border: 1px solid #ffffff;
+}
+
+.subscribe-info-link {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 200px;
+  text-decoration: none;
+  padding-top: 70px;
+  border: 1px solid white;
+}
+
+.subscribe-info-link a {
+  padding-inline-start: 50px;
+  color: #ffffff;
+}
+
+.subscribe-form {
+  width: 100%;
+  height: 450px;
+  display: flex;
+}
+
+.subscribe-form-blank {
+  width: 100%;
+  height: 450px;
+  border: 1px solid #ffffff;
+}
+
+.subscribe-form-info {
+  border: 1px solid white;
+  width: 308px;
+}
+
+.form {
+  padding-top: 100px;
+  padding-inline-start: 80px;
+}
+
+.form input {
+  width: 100%;
+}
+
+.email {
+  padding-top: 20px;
+}
+
+.subscribe-checkbox {
+  display: flex;
+  padding-top: 30px;
+}
+
+.subscribe-checkbox input {
+  padding: px;
+}
+
+.email button {
+  margin-top: 20px;
+  width: 100%;
+  padding-block: 10px;
+  border: 1px solid transparent;
+  border-radius: 50px;
+}
+
+.email button:hover {
+  background-color: sandybrown;
+  border: 1px solid white;
+}
+
+footer {
+  display: flex;
+  padding-inline-start: 37%;
+  padding-block: 50px;
+}
+
+footer h3 {
+  font-size: 16px;
+  font-weight: 100;
+}
+
+footer a {
+  color: #ffffff;
+  padding-inline-start: 5px;
+  padding-top: 1px;
+}
